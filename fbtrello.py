@@ -89,8 +89,6 @@ def listcards():
     trello.set_token(TRELLO_TOKEN)
 
     b=trello.members.get_card(USERNAME, fields='name,idShort,shortUrl')
-    print "moco"
-    #b=trello.lists.get_card(LIST)
     print "My trello cards:"
     for i in b:
         print i['name'] +'- ID:'+ color.BLUE +str(i['idShort']) + color.END
