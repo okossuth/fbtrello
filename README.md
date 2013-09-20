@@ -1,4 +1,4 @@
 fbtrello
 ========
 
-Script that retrieves trello card's information and posts it to a facebook account
+Script that retrieves a card's information from Trello and posts it to a facebook account
