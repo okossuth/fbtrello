@@ -137,7 +137,7 @@ def postfb(args):
     br.submit()
     br.open("https://m.facebook.com/upload.php?source_loc=composer&refid=7")
     br.select_form(nr=0)
-    filepath = './trello2b.jpg'
+    filepath = os.path.expanduser(os.path.join("~", "./trello2b.jpg"))
     br.form.add_file(open(filepath, 'rb'), 'text/plain', 'd6sEz.jpg', nr=0, name='file1')
     print br.form
     br.form["caption"] = message
